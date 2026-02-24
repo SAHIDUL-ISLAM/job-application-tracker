@@ -132,7 +132,7 @@ function renderFiltered(type){
     if(currentList.length === 0){
         filteredSection.innerHTML = `
             <div class="flex flex-col items-center justify-center py-20">
-                <img src="../job.png" alt="photo">
+                <img src="job.png" alt="photo">
                 <h2 class="text-2xl font-bold">No jobs available</h2>
                 <p>Check back soon for new job opportunities</p>
             </div>`;
