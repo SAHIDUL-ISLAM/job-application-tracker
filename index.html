@@ -21,7 +21,7 @@
 </head>
 <body class="bg-[#f8fafc]">
     <header class="max-w-[1110px] mx-auto pt-[60px] space-y-5">
-        <h1 class="px-5 text-2xl sm:text-4xl font-bold">Job Application Tracker</h1>
+        <h1 class="px-5 text-2xl sm:text-4xl font-bold">Job Application Tracker </h1>
         <div class="h-card grid grid-cols-1 px-5 sm:grid-cols-3 gap-5 justify-between ">
             <div class="card bg-white p-5 rounded-sm">
                 <h2>Total</h2>
@@ -40,11 +40,18 @@
     </header>
     <main id="main" class="max-w-[1110px] mx-auto space-y-5">
         <h1 class="font-bold px-5 sm:">Available Jobs</h1>
-        <div class="flex flex-wrap justify-center px-5 sm:justify-start gap-6">
-            <button onclick="toggle('all-btn')" id="all-btn" class=" bg-blue-600 text-white w-[100px] py-1 rounded">All</button>
-            <button onclick="toggle('interview-btn')" id="interview-btn" class="bg-gray-200 w-[100px] py-1 rounded">Interview</button>
-            <button onclick="toggle('rejected-btn')" id="rejected-btn" class="bg-gray-200 w-[100px] py-1 rounded">Rejected</button>
+        <div class="available-section flex justify-between items-center">
+            <div class="flex flex-wrap justify-center px-5 sm:justify-start gap-6">
+                <button onclick="toggle('all-btn')" id="all-btn" class=" bg-blue-600 text-white w-[100px] py-1 rounded">All</button>
+                <button onclick="toggle('interview-btn')" id="interview-btn" class="bg-gray-200 w-[100px] py-1 rounded">Interview</button>
+                <button onclick="toggle('rejected-btn')" id="rejected-btn" class="bg-gray-200 w-[100px] py-1 rounded">Rejected</button>
+            </div>
+            <div class="flex gap-1 px-5" >
+                <p id="total-jobs">0</p>
+                <p>jobs</p>
+            </div>
         </div>
+
 
         <!-- filtered section  -->
         <section id="filtered-section" class="hidden">
